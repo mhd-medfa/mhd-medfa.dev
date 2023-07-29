@@ -8,7 +8,7 @@ require("dotenv").config({
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    title: `mlengineer.me`,
+    title: `MLEngineer.me`,
     siteUrl: `https://www.mlengineer.me`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
