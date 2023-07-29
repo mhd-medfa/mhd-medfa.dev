@@ -9,7 +9,7 @@ require("dotenv").config({
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `MLEngineer.me`,
-    siteUrl: `https://www.mlengineer.me`,
+    siteUrl: `https://www.MLEngineer.me`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -31,7 +31,7 @@ const config: GatsbyConfig = {
         localeJsonSourceName: `locale`,
         languages: languages.languages,
         defaultLanguage: languages.defaultLanguage,
-        siteUrl: `https://mlengineer.me/`,
+        siteUrl: `https://MLEngineer.me/`,
         i18nextOptions: {
           defaultNS: "common",
           interpolation: { escapeValue: false },
