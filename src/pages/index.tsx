@@ -38,7 +38,7 @@ export default IndexPage;
 export const Head: HeadFC = () => {
   return (
     <>
-      <title>wmadfaa</title>
+      <title>Mohamad Al Mdfaa</title>
     </>
   );
 };

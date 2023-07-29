@@ -31,7 +31,7 @@ const config: GatsbyConfig = {
         localeJsonSourceName: `locale`,
         languages: languages.languages,
         defaultLanguage: languages.defaultLanguage,
-        siteUrl: `https://wmadfaa.dev`,
+        siteUrl: `https://mlengineer.me/`,
         i18nextOptions: {
           defaultNS: "common",
           interpolation: { escapeValue: false },
