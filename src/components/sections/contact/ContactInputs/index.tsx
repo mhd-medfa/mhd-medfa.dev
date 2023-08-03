@@ -30,23 +30,22 @@ function ContactInputs() {
         label={t("Meeting Subject") as string}
         placeholder={t("Select your meeting subject") as string}
         options={[
-          
           {
             value: "job",
-            label: t("Having a job opportunity for you")
+            label: t("Having a job opportunity for you"),
           },
           {
-            value: "consulting", 
-            label: t("Consulting on a machine learning project")
+            value: "consulting",
+            label: t("Consulting on a machine learning project"),
           },
-          { 
-            value: "research", 
-            label: t("Discussing research collaboration") 
+          {
+            value: "research",
+            label: t("Discussing research collaboration"),
           },
           {
             value: "speaking",
-            label: t("Inviting you to speak at an event")
-          }
+            label: t("Inviting you to speak at an event"),
+          },
         ]}
         onChange={(newValue) => {
           subjectInputRef.current?.setAttribute("value", newValue!.value);

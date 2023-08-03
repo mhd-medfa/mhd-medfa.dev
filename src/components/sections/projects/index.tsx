@@ -23,8 +23,7 @@ function Projects({ projects }: IProps) {
           </h1>
           <p className="text-sm text-start">
             <Trans>
-              A Diverse Collection of Outstanding Machine Learning Projects That Demonstrate My Skills and
-              Expertise.
+              A Diverse Collection of Outstanding Machine Learning Projects That Demonstrate My Skills and Expertise.
             </Trans>
           </p>
         </div>
