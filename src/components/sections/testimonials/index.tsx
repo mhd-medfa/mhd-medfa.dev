@@ -22,12 +22,15 @@ function Testimonials({ testimonials }: IProps) {
             <Trans>Testimonials</Trans>
           </h1>
           <p className="text-sm text-start">
-            <Trans>Inspiring Words from Satisfied Clients and Employers that Showcase My Machine Learning and Software Development Expertise.</Trans>
+            <Trans>
+              Inspiring Words from Satisfied Clients and Employers that Showcase My Machine Learning and Software
+              Development Expertise.
+            </Trans>
           </p>
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 grid-flow-dense gap-9">
-        {sortBy(testimonials, (d) => d.node.data.content?.length).map((testimonial) => (
+        {sortBy(testimonials, (d) => d.node.uid).map((testimonial) => (
           <TestimonialCard key={testimonial.node.uid} testimonial={testimonial.node} />
         ))}
       </div>
