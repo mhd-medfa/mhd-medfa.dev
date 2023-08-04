@@ -29,7 +29,7 @@ function Projects({ projects }: IProps) {
         </div>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 grid-flow-dense gap-9">
-        {sortBy(projects, (d) => d.node.data.short_description?.length).map((project) => (
+        {sortBy(projects, (d) => d.node.uid).map((project) => (
           <ProjectCard key={project.node.uid} project={project.node} />
         ))}
       </div>
