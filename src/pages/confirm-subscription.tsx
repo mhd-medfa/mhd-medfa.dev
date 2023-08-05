@@ -1,11 +1,8 @@
-import { graphql, HeadFC, Link, PageProps } from "gatsby";
+import { HeadFC, Link, PageProps } from "gatsby";
 import * as React from "react";
 
-import Layout from "../components/layout";
+import Layout from "../components/layout/confirm-subscription";
 
-interface IPageData {
-  homepage: Queries.PrismicHomepage;
-}
 const pageStyles = {
   color: "#232129",
   padding: "96px",
@@ -28,9 +25,9 @@ const codeStyles = {
   borderRadius: 4,
 };
 
-const SubscriptionConfirmedPage: React.FC<PageProps<IPageData>> = ({ data }) => {
+const SubscriptionConfirmedPage: React.FC<PageProps> = () => {
   return (
-    <Layout githubUrl={data.homepage.data.github!.url!} cvUrl={data.homepage.data.cv!.url!}>
+    <Layout>
       <main style={pageStyles}>
         <h1 style={headingStyles}>Subscription confirmed!</h1>
         <p style={paragraphStyles}>
@@ -56,27 +53,3 @@ const SubscriptionConfirmedPage: React.FC<PageProps<IPageData>> = ({ data }) => 
 export default SubscriptionConfirmedPage;
 
 export const Head: HeadFC = () => <title>ML Engineer Newsletter - Subscription Confirmed</title>;
-
-export const query = graphql`
-  query ($language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
-    homepage: prismicHomepage {
-      data {
-        cv {
-          url
-        }
-        github {
-          url
-        }
-      }
-    }
-  }
-`;
