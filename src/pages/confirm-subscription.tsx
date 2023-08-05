@@ -4,9 +4,9 @@ import * as React from "react";
 import Layout from "../components/layout/confirm-subscription";
 
 const pageStyles = {
-  color: "#232129",
+  // color: "#232129",
   padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  // fontFamily: "-apple-system, Roboto, sans-serif, serif",
 };
 const headingStyles = {
   marginTop: 0,
@@ -29,7 +29,9 @@ const SubscriptionConfirmedPage: React.FC<PageProps> = () => {
   return (
     <Layout>
       <main style={pageStyles}>
-        <h1 style={headingStyles}>Subscription confirmed!</h1>
+        <h1 style={headingStyles} className="text-xl md:text-2xl font-semibold">
+          Subscription confirmed!{" "}
+        </h1>
         <p style={paragraphStyles}>
           Boom!😀 You're officially confirmed and on the list. Expect some great emails headed your way very soon.
           <br />
